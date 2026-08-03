@@ -1,41 +1,31 @@
 # R Portfolio
 
-Quantitative research projects in R · NYU PSYCH-UA 300 · Spring 2026
+R analysis projects spanning behavioral data pipelines, predictive modeling, and mixed-methods research.
 
 ---
 
-## Projects
+### [01 · Cognitive Control — Flanker Task Pipeline](01_cognitive_control/)
 
-### [Behavioral Data Analysis — Eriksen Flanker Task](https://github.com/MillieMeng/cognitive-control-flanker)
+End-to-end R pipeline processing **8,000+ trial-level observations** across congruent and incongruent Flanker conditions. Automated per-participant visualizations with reusable ggplot2 functions; modeled response-time and error-rate trends with LOESS regression; documented in RMarkdown.
 
-End-to-end R pipeline analyzing 8,000+ behavioral observations from a cognitive interference experiment.
-
-- **Research question:** Does trial congruency affect reaction time and error rate? Do patterns differ between a clinical test group and healthy controls?
-- **Methods:** Data cleaning, long-to-wide reshaping, `ggplot2` visualization, LOESS regression
-- **Key finding:** Incongruent trials produced consistently slower reaction times and higher error rates, confirming the Flanker Effect
-- **Tools:** `tidyverse` · `ggplot2` · `dplyr` · `tidyr` · `RMarkdown`
+`tidyverse` `ggplot2` `LOESS regression` `RMarkdown` `data wrangling`
 
 ---
 
-### [Attachment Styles, Self-Compassion & Emotional Distress](https://github.com/MillieMeng/attachment-self-compassion-study)
+### [02 · Predictive Modeling — Attachment & Mental Health](02_attachment_mental_health/)
 
-Archival quantitative analysis of 473 Korean college students examining how attachment styles predict depression and anxiety.
+Multiple regression model **(R² = .31)** on archival survey data **(N = 473)**. Full assumption testing — normality, homoscedasticity, multicollinearity, outliers — with effect sizes reported in APA format. Two-way ANOVA and independent samples t-test included.
 
-- **Research question:** Do anxious and avoidant attachment predict depression? Do gender and university group affect anxiety? Do males and females differ in self-compassion?
-- **Methods:** Multiple linear regression · Two-way ANOVA · Independent samples *t*-test · Assumption testing (Shapiro-Wilk, Levene's, NCV)
-- **Key finding:** Attachment styles explained ~30% of variance in depression (*R*² = .306); both anxious (*B* = 0.18) and avoidant (*B* = 0.21) attachment were significant predictors
-- **Tools:** `R` · `tidyverse` · `ggplot2` · `car` · `readxl`
+`multiple regression` `ANOVA` `assumption testing` `effectsize` `RMarkdown`
 
 ---
 
-## Skills Demonstrated
+### [03 · Relationship Dissolution & Social Cognition](03_relationship_dissolution/)
 
-- Data wrangling and cleaning with `dplyr` and `tidyr`
-- Publication-ready visualization with `ggplot2`
-- Statistical inference: regression, ANOVA, t-tests
-- Assumption testing and results interpretation
-- Reproducible research with `RMarkdown`
+Mixed-methods study on psychological responses to "ghosting." Survey **(N = 119)** + qualitative interviews **(n = 19)**. EFA confirmed high-reliability scale (α = .891, KMO = .812); 62.9% showed elevated rumination. Privacy-conscious design — simulated data included for reproducibility.
+
+`EFA` `psychometrics` `psych` `ggplot2` `mixed-methods`
 
 ---
 
-*Millie Meng · Psychology B.A. · New York University · Class of 2027*
+<sub>R · tidyverse · ggplot2 · psych · RMarkdown · ANOVA · EFA · regression · LOESS</sub>
